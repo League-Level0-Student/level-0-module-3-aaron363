@@ -6,7 +6,7 @@ public class _else_if_own_adventure {
 
 	public static void main(String[] args) {
 		JOptionPane.showMessageDialog(null, "You got lost in the woods and can't find your path home.\n "
-				+ "You find a 2 path ways but you can't decide which one to go to.");
+				+ "You find 2 path ways but you can't decide which one to go to.");
 		String user1 = JOptionPane.showInputDialog("Type 1 to go to the left path,\n or Type 2 to go to the right one");
 		if(user1.equals("1")) {
 			String user2 = JOptionPane.showInputDialog("You decided to go to the left path and found a wooden house but it looks haunted.\n"
@@ -25,7 +25,7 @@ public class _else_if_own_adventure {
 				}else {
 					JOptionPane.showMessageDialog(null, "You decided to give the wolfs your food.\n"
 							+ "The wolfs ate all the food and then ran away.\n"
-							+ "You continued the path and eventually found your village and found your house.");
+							+ "You continued the path and eventually found your village");
 				}
 				
 			}else {
@@ -48,7 +48,19 @@ public class _else_if_own_adventure {
 			}
 			
 		}else {
-			
+			String user2 = JOptionPane.showInputDialog("You decided to go to the right path.\n"
+					+ "You find a village but it is not yours.\n"
+					+ "Type 1 to go into the village or type 2 to go past the village.");
+			if(user2.contentEquals("1")) {
+				JOptionPane.showMessageDialog(null, "You went into the village.\n"
+						+ "The people living there were nice and gave you water and food.\n"
+						+ "They said your village is near their village and can lead you there.\n"
+						+ "You followed them to your village and you lived happily ever after.");;
+			}else {
+				JOptionPane.showMessageDialog(null, "You went passed  the village.\n"
+						+ "You found your village\n"
+						+ "You followed the path and found  your village and you lived happily ever after.");;
+			}
 		}
 
 	}
