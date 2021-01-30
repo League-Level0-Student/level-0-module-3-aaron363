@@ -21,6 +21,20 @@ package _03_modulo._4_fizz_buzz;
 **/
 
 public class FizzBuzz {
-
+	public static void main(String[] args) {
+		String last = "";
+		for(int i = 1; i < 20; i++) {
+			if(i % 3 == 0 && i % 5 == 0){
+				last += "FizzBuzz ";
+			}else if(i % 3 == 0) {
+				last += "Fizz ";
+			}else if(i % 5 == 0) {
+				last += "Buzz ";
+			}else {
+				last += i + " ";
+			}
+		}
+		System.out.println(last);
+	}
 }
 
